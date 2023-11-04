@@ -5,6 +5,7 @@ const displayIntroduction = require('./interface/interface')
 const shellSort = require('./algorithms/shellSort')
 const {readFromFile} = require('./fileWork/fileWork')
 const FILE_PATH = require('./config/path')
+const {input} = require("readline");
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -25,14 +26,15 @@ const promptUser = () => {
             console.log("Данные в виде массива:", dataArr)
             console.log("\nОтсортированный массив:")
             shellSort(dataArr)
-        } else {
-            dataArr.push(input);
+        }
+        else {
+            dataArr.push(Number(input));
             promptUser();
         }
     });
 }
 const app = () => {
-    rl.question("> " , (input) => {
+        rl.question("> " , (input) => {
             switch (input) {
                 case KEYBOARD_INPUT:
                     console.log("Введите данные или \"stop\" для выхода")
@@ -57,7 +59,7 @@ const app = () => {
                     console.log('Неправильный ввод. Попробуйте снова.\n')
                     break;
             }
-    })
+        })
     return 0;
 }
 
