@@ -1,12 +1,6 @@
 // Объявление функции сортировки Шелла
 const shellSort = (arr) => {
-    let n = arr.length, i = Math.floor(n/2);
-
-    for (let i = 0; i < n; i++) {
-        if (isNaN(arr[i])) {
-            arr[i] = 0;
-        }
-    }
+    let n = arr.length, i = Math.floor(n / 2);
 
     // Начало цикла сортировки
     while (i > 0) {
@@ -15,8 +9,8 @@ const shellSort = (arr) => {
             let k = j, t = arr[j];
 
             // Вложенный цикл для сравнения и перестановки элементов
-            while (k >= i && arr[k-i] > t) {
-                arr[k] = arr[k-i];
+            while (k >= i && arr[k - i] > t) {
+                arr[k] = arr[k - i];
                 k -= i;
             }
 
@@ -24,7 +18,7 @@ const shellSort = (arr) => {
         }
 
         // Уменьшение интервала i
-        i = (i === 2) ? 1 : Math.floor(i * 5/11);
+        i = (i === 2) ? 1 : Math.floor(i * 5 / 11);
     }
 
     console.log(arr); // Вывод отсортированного массива

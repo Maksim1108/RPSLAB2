@@ -22,4 +22,4 @@ const readFromFile = (filePath, callback) => {
 }
 
 // Экспорт модуля fs и функции readFromFile для использования в других модулях
-module.exports = { fs, readFromFile };
+module.exports = {fs, readFromFile};
