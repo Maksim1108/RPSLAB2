@@ -13,10 +13,10 @@ const rl = readline.createInterface({
 });
 
 let dataArr = [];
-const promptUser = () => {
+const promptUser = () => { // выбор пользователя из меню
     rl.question("> ", (input) => {
 
-        if (input.toLowerCase() === 'stop') {
+        if (input.toLowerCase() === 'stop') { // если введен stop, то вывод данных
             rl.close();
             console.log("Данные в виде массива:", dataArr);
             console.log("\nОтсортированный массив:");
@@ -26,7 +26,7 @@ const promptUser = () => {
 
         const isNumber = parseInt(input, 10);
 
-        if (isNaN(isNumber)) {
+        if (isNaN(isNumber)) { // проверка на ввод числа, иначе добавление в массив
             console.log("Введите число");
         } else {
             dataArr.push(Number(input));
@@ -42,13 +42,13 @@ const app = () => {
 
     rl.question("> ", (input) => {
         switch (input) {
-            case enums.KEYBOARD_INPUT:
+            case enums.KEYBOARD_INPUT: // ручной ввод массива
                 console.log("Введите данные или \"stop\" для выхода")
                 promptUser()
                 break;
-            case enums.UPLOAD_FROM_FILE:
+            case enums.UPLOAD_FROM_FILE: // загрузка массива из файла
                 console.log("Загрузка из файла ✓")
-                readFromFile(FILE_PATH, (err, dataArr) => {
+                readFromFile(FILE_PATH, (err, dataArr) => { // проверка пути, если успешно то вывод данный
                     if (err) {
                         console.error('Произошла ошибка:', err);
                     } else {
@@ -59,10 +59,10 @@ const app = () => {
                     process.exit();
                 })
                 break;
-            case enums.QUIT:
+            case enums.QUIT: // завершение
                 console.log('Завершение работы программы.')
                 break;
-            default:
+            default: // неправильный выбор из меню
                 console.log('Неправильный ввод. Попробуйте снова.')
                 process.exit();
         }
