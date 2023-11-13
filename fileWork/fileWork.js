@@ -13,11 +13,8 @@ const readFromFile = (filePath, callback) => {
         // Разбиваем данные на массив чисел, используя пробелы как разделители
         const arr = data.split(/\s+/).map(Number);
 
-        // Фильтруем NaN значения (если они есть)
-        const filteredArr = arr.filter(num => !isNaN(num));
-
         // Вызываем функцию обратного вызова, передавая отфильтрованный массив чисел
-        callback(null, filteredArr);
+        callback(null, arr);
     });
 }
 

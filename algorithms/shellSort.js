@@ -18,7 +18,7 @@ const shellSort = (arr) => {
         }
 
         // Уменьшение интервала i
-        i = (i === 2) ? 1 : Math.floor(i * 5 / 11);
+        i = (i === 2) ? 1 : Math.floor(i / 2);
     }
 
     console.log(arr); // Вывод отсортированного массива

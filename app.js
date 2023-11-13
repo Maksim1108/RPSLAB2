@@ -7,7 +7,7 @@ const {readFromFile} = require('./fileWork/fileWork')
 const FILE_PATH = require('./config/path')
 const enums = require('./enums')
 
-const rl = readline.createInterface({
+const rl = readline.createInterface({ // модуль для создания интерфейся ввода и вывода в консоль
     input: process.stdin,
     output: process.stdout
 });
@@ -61,10 +61,11 @@ const app = () => {
                 break;
             case enums.QUIT: // завершение
                 console.log('Завершение работы программы.')
+                process.exit()
                 break;
             default: // неправильный выбор из меню
                 console.log('Неправильный ввод. Попробуйте снова.')
-                process.exit();
+                process.exit()
         }
     })
     return 0;
