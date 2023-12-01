@@ -1,6 +1,4 @@
 const readline = require('readline')
-const {input} = require("readline");
-
 const displayIntroduction = require('./interface/interface')
 const shellSort = require('./algorithms/shellSort')
 const {readFromFile} = require('./fileWork/fileWork')
