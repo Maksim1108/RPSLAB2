@@ -1,6 +1,6 @@
 const readline = require('readline')
 const displayIntroduction = require('./interface/interface')
-const shellSort = require('./algorithms/shellSort')
+const shellSort = require('../server/algoritmhs/shellSort')
 const {readFromFile} = require('./fileWork/fileWork')
 const FILE_PATH = require('./config/path')
 const enums = require('./enums')
