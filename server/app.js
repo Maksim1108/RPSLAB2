@@ -63,6 +63,28 @@ app.get('/sort', async (req, res) => {
         });
     }
 })
+app.delete('/delete', async (req, res) => {
+    try {
+        const arr = await arrayOfArraysModel.findOneAndDelete({"numberOfArrays" : 10})
+
+        if (!arr) {
+            return res.status(404).json({
+                message: 'Массив не найден',
+            });
+        }
+
+        res.status(200).json({
+            message: 'Массив найден и удален',
+        });
+
+    } catch (err) {
+        console.log(err)
+        res.status(500).json({
+            message: 'Не удалось загрузить массивы',
+        });
+    }
+})
+
 
 app.listen(process.env.PORT || 3001, () => {
     try {

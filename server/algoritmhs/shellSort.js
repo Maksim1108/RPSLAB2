@@ -1,4 +1,4 @@
-export function shellSort(arr) {
+export const shellSort = arr => {
     const n = arr.length;
 
     // Вычисляем максимальный шаг по последовательности Хиббарда
