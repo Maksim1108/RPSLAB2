@@ -26,5 +26,5 @@ export const shellSort = arr => {
         h = Math.floor(h / 2);
     }
 
-    console.log(arr);
+    return arr;
 }

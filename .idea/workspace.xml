@@ -4,9 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="connected to DB, create addArraysToDB func, remade shellSort, write two requests">
+    <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="add &quot;delete test&quot;">
+      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secondlab/styles/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/algoritmhs/shellSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/algoritmhs/shellSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.idea/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.idea/client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/config/path.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/config/path.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/enums.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/enums.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/fileWork/fileWork.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/fileWork/fileWork.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/interface/interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/interface/interface.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/algoritmhs/shellSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shellSort.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +91,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\Desktop\3 сем\РПС\lab2\client\src" />
       <recent name="C:\Users\Максим\Desktop\3 сем\РПС\lab2\server\algoritmhs" />
     </key>
   </component>
@@ -85,7 +105,9 @@
       <updated>1701454776377</updated>
       <workItem from="1701454778463" duration="447000" />
       <workItem from="1701698656136" duration="14446000" />
-      <workItem from="1701761375581" duration="856000" />
+      <workItem from="1701761375581" duration="1043000" />
+      <workItem from="1701967928045" duration="151000" />
+      <workItem from="1701968796591" duration="8273000" />
     </task>
     <task id="LOCAL-00001" summary="init third lab">
       <option name="closed" value="true" />
@@ -103,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701714434629</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add &quot;delete test&quot;">
+      <option name="closed" value="true" />
+      <created>1701762279989</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701762279989</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +153,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init third lab" />
     <MESSAGE value="connected to DB, create addArraysToDB func, remade shellSort, write two requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="connected to DB, create addArraysToDB func, remade shellSort, write two requests" />
+    <MESSAGE value="add &quot;delete test&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add &quot;delete test&quot;" />
   </component>
 </project>

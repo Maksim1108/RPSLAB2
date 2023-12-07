@@ -5,7 +5,7 @@ import cors from "cors"
 import {connectionToDB} from "./db.connection.js";
 import {arrayOfArraysModel} from  "./models/arrayOfArraysModel.js"
 import {addArraysToDB} from "./algoritmhs/algoritmhs.js";
-import {shellSort} from "./algoritmhs/shellSort.js"
+import {shellSort} from "../client/src/shellSort.js"
 
 
 connectionToDB()
@@ -14,7 +14,7 @@ const app = express()
 app.use(express.json());
 app.use(cors());
 app.get('/', (req, res)=>{
-    res.send("Hello World!")
+    res.send("Server")
 })
 
 app.post('/upload', async (req, res) => {
