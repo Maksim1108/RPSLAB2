@@ -1,29 +1,32 @@
 import React, { useState } from 'react';
 import {shellSort} from "../../shellSort";
-import axios from 'axios';
-import {useNavigate} from 'react-router-dom';
+import axios from 'axios'; // Импорт библиотеки для HTTP-запросов
+import {useNavigate} from 'react-router-dom'; // Импорт хука для навигации
 
+// Компонент InputAndEdit
 const InputAndEdit = () => {
-    const [inputArray, setInputArray] = useState('');
-    const [originalArray, setOriginalArray] = useState([]);
-    const [sortedArray, setSortedArray] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const navigate = useNavigate();
+    // Состояния компонента
+    const [inputArray, setInputArray] = useState(''); // Входной массив в виде строки
+    const [originalArray, setOriginalArray] = useState([]); // Исходный массив
+    const [sortedArray, setSortedArray] = useState([]); // Отсортированный массив
+    const [loading, setLoading] = useState(false); // Состояние загрузки
+    const navigate = useNavigate(); // Инициализация хука для навигации
 
-
+    // Обработчик изменения ввода
     const handleInputChange = (e) => {
         setInputArray(e.target.value);
     };
 
+    // Обработчик сортировки
     const handleSort = () => {
         const array = inputArray.split(',').map((item) => parseInt(item, 10));
         setOriginalArray(array.slice());
 
-        // Вызываем вашу функцию shellSort для сортировки
+        // Вызываем  функцию shellSort для сортировки
         const sorted = shellSort([array]);
         setSortedArray(sorted[0]);
     };
-
+    // Функция сохранения данных в базу данных
     const saveDataToDB = async (arrayToSave) => {
         try {
             setLoading(true);
@@ -36,7 +39,7 @@ const InputAndEdit = () => {
             setLoading(false);
         }
     };
-
+    // Визуализация компонента
     return (
         <div className="inputAndEdit">
             <label>
