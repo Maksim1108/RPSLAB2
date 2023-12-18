@@ -1,3 +1,4 @@
+// Функция bestSort выполняет сортировку методом Шелла (Хиббарда)
 const bestSort = arr => {
     const n = arr.length;
 
@@ -14,6 +15,7 @@ const bestSort = arr => {
             for (let j = h; j < a.length; j++) {
                 const currentElement = a[j];
                 let k = j;
+                 // Проводим сравнение и перемещение элементов в подмассиве
                 while (k >= h && currentElement < a[k - h]) {
                     a[k] = a[k - h];
                     k -= h;
@@ -29,4 +31,5 @@ const bestSort = arr => {
     return arr;
 }
 
+// Экспортируем функцию bestSort для использования в других модулях
 module.exports = bestSort
