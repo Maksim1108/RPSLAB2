@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {shellSort} from "../../shellSort";
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
@@ -8,7 +8,6 @@ const InputAndEdit = () => {
     const [originalArray, setOriginalArray] = useState([]);
     const [sortedArray, setSortedArray] = useState([]);
     const [loading, setLoading] = useState(false);
-    const navigate = useNavigate();
 
 
     const handleInputChange = (e) => {
@@ -21,17 +20,26 @@ const InputAndEdit = () => {
 
         // Вызываем вашу функцию shellSort для сортировки
         const sorted = shellSort([array]);
-        setSortedArray(sorted[0]);
+        setSortedArray(sorted);
     };
 
-    const saveDataToDB = async (arrayToSave) => {
+    const saveDataToDB = async () => {
         try {
             setLoading(true);
-            await axios.post('http://localhost:8080/save', arrayToSave);
-            navigate('/');
+            await axios.post('http://localhost:8080/save', [originalArray]);
         } catch (error) {
             console.error('Ошибка при сохранении массива:', error);
-            alert('Ошибка при сохранении массива');
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const saveDataToDBSortedArrays = async () => {
+        try {
+            setLoading(true);
+            await axios.post('http://localhost:8080/savesorted', [...sortedArray]);
+        } catch (error) {
+            console.error('Ошибка при сохранении массива:', error);
         } finally {
             setLoading(false);
         }
@@ -40,28 +48,28 @@ const InputAndEdit = () => {
     return (
         <div className="inputAndEdit">
             <label>
-                <h2 className="inputAndEdit__title">Введите числа через запятую:</h2>
-                <input className="inputAndEdit__input" type="text" value={inputArray} onChange={handleInputChange} />
+                <h2 className="inputAndEdit__title">Enter numbers separated by commas:</h2>
+                <input className="inputAndEdit__input" type="text" value={inputArray} onChange={handleInputChange}/>
             </label>
-            <button className="inputAndEdit__btn" onClick={handleSort}>Сортировать</button>
+            <button className="inputAndEdit__btn" onClick={handleSort}>Sort</button>
             <div>
-                <p className="inputAndEdit__title">Исходный массив: [{originalArray.join(',')}]</p>
-                <p className="inputAndEdit__title">Отсортированный массив: [{sortedArray.join(',')}]</p>
+                <p className="inputAndEdit__arrays">Initial Array: [{originalArray.join(',')}]</p>
+                <p className="inputAndEdit__arrays">Sorted Array: [{sortedArray.join(',')}]</p>
             </div>
             <div className="inputAndEdit__btns">
                 <button
                     className="inputAndEdit__btn"
-                    onClick={ () => saveDataToDB(originalArray)}
+                    onClick={saveDataToDB}
                     disabled={inputArray.length === 0 || loading}
                 >
-                    {loading ? 'Сохранение...' : 'Сохранить исходный'}
+                    {loading ? 'Preservation...' : 'Save initial'}
                 </button>
                 <button
                     className="inputAndEdit__btn"
-                    onClick={() => saveDataToDB(sortedArray)}
+                    onClick={saveDataToDBSortedArrays}
                     disabled={sortedArray.length === 0 || loading}
                 >
-                    {loading ? 'Сохранение...' : 'Сохранить отсортированный'}
+                    {loading ? 'Preservation...' : 'Save sorted'}
                 </button>
             </div>
         </div>

@@ -54,6 +54,31 @@ app.post('/save', async (req, res) => {
         const array = req.body;
 
         // Создание нового документа в модели sortedArrayModel
+        const doc = new arrayOfArraysModel({
+            array: array,
+        });
+
+        // Сохранение документа в базе данных
+        const originalArray = await doc.save();
+
+        // Отправка успешного ответа
+        res.status(200).json({
+            message: 'Успешная загрузка отсортированного массива',
+        });
+
+    } catch (err) {
+        // Отправка ответа об ошибке
+        console.log(err)
+        res.status(500).json({
+            message: 'Не удалось загрузить массив',
+        });
+    }
+})
+app.post('/savesorted', async (req, res) => {
+    try {
+        const array = req.body;
+
+        // Создание нового документа в модели testArrayModel
         const doc = new sortedArrayModel({
             array: array,
         });

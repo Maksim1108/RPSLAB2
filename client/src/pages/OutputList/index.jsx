@@ -41,6 +41,7 @@ const OutputList = () => {
 
     return (
         <section className="arrays-section">
+            <h2 className="main-title">Output Arrays</h2>
             <h2 className="section-title">Arrays</h2>
             <div className="arrays-container">
                 {data.map((item, index) => (

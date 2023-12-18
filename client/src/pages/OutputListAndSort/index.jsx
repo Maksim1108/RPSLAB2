@@ -43,7 +43,7 @@ const OutputListAndSort = () => {
 
     return (
         <div className="edit-and-sort-container">
-            <h2 className="main-title">Edit and Sort Array</h2>
+            <h2 className="main-title">Output and Sort Array</h2>
 
             <h3 className="section-title">Original Arrays</h3>
             <div className="array-section">
