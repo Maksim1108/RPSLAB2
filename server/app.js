@@ -13,7 +13,7 @@ const addArraysToDB = require("./algoritmhs/algoritmhs");
 // Установка соединения с базой данных
 connectionToDB()
 
-// Инициализация экземпляра Express
+// Создание серверной оболочки
 const app = express()
 
 // Использование middleware для обработки JSON и CORS
