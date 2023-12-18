@@ -4,35 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="create main page">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/OutputList/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/OutputOne/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/OutputOne/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/algoritmhs/sortirovkaBlyat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/sortedArrayModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/testArrayMode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/test.js" afterDir="false" />
+    <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="prelast commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/secondlab/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/secondlab/.idea/client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/secondlab/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/secondlab/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/algoritmhs/algoritmhs.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/algoritmhs/algoritmhs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db.connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/db.connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/arrayOfArraysModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/arrayOfArraysModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputList/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/OutputOne/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputListAndSort/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/OutputOne/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputListAndSort/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +124,7 @@
       <workItem from="1702813277037" duration="10073000" />
       <workItem from="1702834241979" duration="4185000" />
       <workItem from="1702838499637" duration="7629000" />
-      <workItem from="1702885712855" duration="5741000" />
+      <workItem from="1702885712855" duration="11958000" />
     </task>
     <task id="LOCAL-00001" summary="init third lab">
       <option name="closed" value="true" />
@@ -181,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701977218755</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="prelast commit">
+      <option name="closed" value="true" />
+      <created>1702894142966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702894142966</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +188,7 @@
     <MESSAGE value="connected to DB, create addArraysToDB func, remade shellSort, write two requests" />
     <MESSAGE value="add &quot;delete test&quot;" />
     <MESSAGE value="create main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="create main page" />
+    <MESSAGE value="prelast commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="prelast commit" />
   </component>
 </project>

@@ -3,7 +3,7 @@ import axios from 'axios';
 import {shellSort} from '../../shellSort';
 import {Link} from "react-router-dom";
 
-const OutputOne = () => {
+const OutputListAndSort = () => {
     const [data, setData] = useState([]);
     const [sortedData, setSortedData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -63,7 +63,7 @@ const OutputOne = () => {
                 ))}
             </div>
 
-            {sortedData.length !== 0 ? (<h3 className="section-title">Sorted Arrays</h3>) : (<></>)}
+            {sortedData.length !== 0 ? (<h3 className="section-title">Sorted Arrays</h3>) : (<h3 className="section-title">Sorted Arrays</h3>)}
             <div className="array-section">
                 {sortedData.length !== 0 && (
                     <>
@@ -96,4 +96,4 @@ const OutputOne = () => {
     );
 };
 
-export default OutputOne;
+export default OutputListAndSort;
