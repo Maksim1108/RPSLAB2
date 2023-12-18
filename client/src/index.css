@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
 @import url("./pages/index.css");
+@import url("./pages/InputAndEdit/index.css");
+@import url("./pages/OutputList/index.css");
+@import url("./pages/OutputOne/index.css");
 
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
     margin: 0;
@@ -69,15 +72,22 @@ body {
     text-align: left;
     font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
     min-height:100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-weight:normal;
 }
-img{
 
+button  {
+    cursor: pointer;
+}
+
+img{
     max-width:100%;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

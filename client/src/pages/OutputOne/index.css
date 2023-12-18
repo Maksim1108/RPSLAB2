@@ -1,0 +1,55 @@
+.edit-and-sort-container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-title {
+    color: #28a745;
+}
+
+.action-button {
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    background: #6c757d; /* Заменил цвет кнопок на более подходящий серый */
+    cursor: pointer;
+    border: 1px solid #6c757d;
+}
+
+.array-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+.section-title {
+    color: #343a40;
+    margin-top: 20px;
+}
+
+.array-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.array-set {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: max-content;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.array-index {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.button-container {
+    margin-top: 20px;
+}

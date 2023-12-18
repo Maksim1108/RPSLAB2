@@ -1,13 +1,15 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const ArrayOfArraysSchema = new mongoose.Schema(
     {
         numberOfArrays: Number,
-        array: Array,
+        array: Array
     },
     {
         timestamps: true,
     },
 );
 
-export const arrayOfArraysModel = mongoose.model('ArrayOfArrays', ArrayOfArraysSchema);
+const arrayOfArraysModel = mongoose.model('ArrayOfArrays', ArrayOfArraysSchema);
+
+module.exports = arrayOfArraysModel

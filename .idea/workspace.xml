@@ -4,29 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="add &quot;delete test&quot;">
-      <change afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondlab/styles/index.css" afterDir="false" />
+    <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="create main page">
+      <change afterPath="$PROJECT_DIR$/client/src/pages/OutputList/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/OutputOne/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/OutputOne/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/algoritmhs/sortirovkaBlyat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/sortedArrayModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/testArrayMode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.idea/client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/config/path.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/config/path.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/enums.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/enums.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/fileWork/fileWork.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/fileWork/fileWork.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/interface/interface.js" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/interface/interface.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/secondlab/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/algoritmhs/shellSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shellSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secondlab/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/secondlab/.idea/client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/secondlab/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/secondlab/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.idea/server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/algoritmhs/algoritmhs.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/algoritmhs/algoritmhs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db.connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/db.connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/arrayOfArraysModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/arrayOfArraysModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tests/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputList/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +71,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -81,16 +90,26 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;RPSLAB3&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.17.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.68&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Максим/Desktop/3 сем/РПС/lab2/server/algoritmhs&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\Desktop\3 сем\РПС\lab2\server\algoritmhs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\Desktop\3 сем\РПС\lab2\server" />
+      <recent name="C:\Users\Максим\Desktop\3 сем\РПС\lab2\server\tests" />
       <recent name="C:\Users\Максим\Desktop\3 сем\РПС\lab2\client\src" />
       <recent name="C:\Users\Максим\Desktop\3 сем\РПС\lab2\server\algoritmhs" />
     </key>
@@ -107,7 +126,28 @@
       <workItem from="1701698656136" duration="14446000" />
       <workItem from="1701761375581" duration="1043000" />
       <workItem from="1701967928045" duration="151000" />
-      <workItem from="1701968796591" duration="8273000" />
+      <workItem from="1701968796591" duration="8660000" />
+      <workItem from="1702018674077" duration="92000" />
+      <workItem from="1702018824643" duration="7591000" />
+      <workItem from="1702027374264" duration="1269000" />
+      <workItem from="1702032049895" duration="2657000" />
+      <workItem from="1702040119875" duration="113000" />
+      <workItem from="1702042234616" duration="1204000" />
+      <workItem from="1702053964188" duration="642000" />
+      <workItem from="1702060534786" duration="3510000" />
+      <workItem from="1702064533853" duration="4302000" />
+      <workItem from="1702069529705" duration="947000" />
+      <workItem from="1702589628174" duration="643000" />
+      <workItem from="1702637364917" duration="161000" />
+      <workItem from="1702641357847" duration="1481000" />
+      <workItem from="1702644920894" duration="734000" />
+      <workItem from="1702661919026" duration="446000" />
+      <workItem from="1702736706806" duration="15298000" />
+      <workItem from="1702801021033" duration="8164000" />
+      <workItem from="1702813277037" duration="10073000" />
+      <workItem from="1702834241979" duration="4185000" />
+      <workItem from="1702838499637" duration="7629000" />
+      <workItem from="1702885712855" duration="5741000" />
     </task>
     <task id="LOCAL-00001" summary="init third lab">
       <option name="closed" value="true" />
@@ -133,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701762279989</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create main page">
+      <option name="closed" value="true" />
+      <created>1701977218755</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701977218755</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +202,7 @@
     <MESSAGE value="init third lab" />
     <MESSAGE value="connected to DB, create addArraysToDB func, remade shellSort, write two requests" />
     <MESSAGE value="add &quot;delete test&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add &quot;delete test&quot;" />
+    <MESSAGE value="create main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="create main page" />
   </component>
 </project>

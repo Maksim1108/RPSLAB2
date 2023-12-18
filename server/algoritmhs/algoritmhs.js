@@ -2,7 +2,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export const addArraysToDB = (numberOfArrays) => {
+const addArraysToDB = (numberOfArrays) => {
     const arrayOfArrays = []
 
     for (let i = 0; i < numberOfArrays; i++) {
@@ -21,3 +21,5 @@ export const addArraysToDB = (numberOfArrays) => {
 
     return arrayOfArrays
 }
+
+module.exports = addArraysToDB
