@@ -16,7 +16,6 @@ connectionToDB()
 // Создание серверной оболочки
 const app = express()
 
-// Использование middleware для обработки JSON и CORS
 app.use(express.json());
 app.use(cors());
 
