@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
+// Функция для вызова бэкенд-API
 const callBackendAPI = async () => {
+    // Отправка запроса на сервер
     const response = await fetch('http://localhost:8080/outputlist');
     const body = await response.json();
 
+    // Обработка ошибок при получении данных
     if (!response.ok) {
         throw new Error(body.message);
     }
@@ -11,14 +14,17 @@ const callBackendAPI = async () => {
     return body.arrays;
 };
 
+// Компонент OutputList
 const OutputList = () => {
-    const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+   // Состояния компонента
+    const [data, setData] = useState([]); // Данные полученные с бэкенда
+    const [loading, setLoading] = useState(true); // Состояние загрузки
+    const [error, setError] = useState(null); // Ошибка, если таковая возникла
 
     useEffect(() => {
         const fetchData = async () => {
             try {
+                // Вызов функции для получения данных
                 const res = await callBackendAPI();
                 setData(res);
             } catch (err) {
@@ -28,9 +34,10 @@ const OutputList = () => {
             }
         };
 
-        fetchData();
+        fetchData(); // Вызов функции загрузки данных
     }, []);
 
+     // Визуализация компонента
     if (loading) {
         return <p>Загрузка данных...</p>;
     }

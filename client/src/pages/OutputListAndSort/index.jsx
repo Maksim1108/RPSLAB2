@@ -3,14 +3,17 @@ import axios from 'axios';
 import {shellSort} from '../../shellSort';
 import {Link} from "react-router-dom";
 
+// Компонент OutputListAndSort
 const OutputListAndSort = () => {
-    const [data, setData] = useState([]);
-    const [sortedData, setSortedData] = useState([]);
-    const [loading, setLoading] = useState(true);
+    // Состояния компонента
+    const [data, setData] = useState([]); // Исходные данные
+    const [sortedData, setSortedData] = useState([]); // Отсортированные данные
+    const [loading, setLoading] = useState(true); // Состояние загрузки
 
     useEffect(() => {
         const fetchData = async () => {
             try {
+                 // Запрос данных с сервера
                 const response = await axios.get('http://localhost:8080/sort');
                 setData(response.data.arrays || []);
                 setLoading(false);
@@ -19,9 +22,10 @@ const OutputListAndSort = () => {
             }
         };
 
-        fetchData();
+        fetchData(); // Вызов функции загрузки данных
     }, []);
 
+    // Обработчик сортировки данных
     const handleSort = () => {
         if (Array.isArray(data)) {
             const deepCopyData = JSON.parse(JSON.stringify(data)); // Создание глубокой копии массива data
@@ -36,7 +40,7 @@ const OutputListAndSort = () => {
             console.error('Data is not an array.');
         }
     };
-
+    
     if (loading) {
         return <p>Загрузка данных...</p>;
     }
