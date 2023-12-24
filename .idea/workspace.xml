@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/OutputList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/OutputListAndSort/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputListAndSort/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/shellSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shellSort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/algoritmhs/sortirovkaBlyat.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/algoritmhs/sortShell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="RPSLAB3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
