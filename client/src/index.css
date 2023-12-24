@@ -91,3 +91,8 @@ img{
     justify-content: center;
     align-items: center;
 }
+
+.loading-message {
+    margin-top: 300px;
+    color: red;
+}

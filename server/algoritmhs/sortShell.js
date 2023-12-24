@@ -1,5 +1,5 @@
 // Функция bestSort выполняет сортировку методом Шелла (Хиббарда)
-const bestSort = arr => {
+const sortShell = arr => {
     const n = arr.length;
 
     // Вычисляем максимальный шаг по последовательности Хиббарда
@@ -32,4 +32,4 @@ const bestSort = arr => {
 }
 
 // Экспортируем функцию bestSort для использования в других модулях
-module.exports = bestSort
+module.exports = sortShell

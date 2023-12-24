@@ -1,56 +1,54 @@
+// Импорт необходимых зависимостей и модулей React
 import React, { useState, useEffect } from 'react';
 
-// Функция для вызова бэкенд-API
+// Функция для вызова API бэкенда
 const callBackendAPI = async () => {
-    // Отправка запроса на сервер
-    const response = await fetch('http://localhost:8080/outputlist');
-    const body = await response.json();
+    const response = await fetch('http://localhost:8080/outputlist'); // Выполнение HTTP-запроса
+    const body = await response.json(); // Преобразование ответа в формат JSON
 
-    // Обработка ошибок при получении данных
     if (!response.ok) {
-        throw new Error(body.message);
+        throw new Error(body.message); // Если ответ не успешен, выбросить ошибку с сообщением из тела ответа
     }
 
-    return body.arrays;
+    return body.arrays; // Возврат массивов данных из ответа
 };
 
-// Компонент OutputList
+// Основной компонент
 const OutputList = () => {
-   // Состояния компонента
-    const [data, setData] = useState([]); // Данные полученные с бэкенда
-    const [loading, setLoading] = useState(true); // Состояние загрузки
-    const [error, setError] = useState(null); // Ошибка, если таковая возникла
+    // Состояния компонента
+    const [data, setData] = useState([]); // Данные, полученные с бэкенда
+    const [loading, setLoading] = useState(true); // Состояние загрузки данных
+    const [error, setError] = useState(null); // Состояние ошибки, если она произошла
 
+    // Эффект, выполняющийся при монтировании компонента
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Вызов функции для получения данных
-                const res = await callBackendAPI();
-                setData(res);
+                const res = await callBackendAPI(); // Вызов функции для вызова API бэкенда
+                setData(res); // Обновление состояния данными
             } catch (err) {
-                setError(err.message);
+                setError(err.message); // Обработка ошибки и обновление состояния ошибки
             } finally {
-                setLoading(false);
+                setLoading(false); // Окончание загрузки данных (независимо от успеха или ошибки)
             }
         };
 
         fetchData(); // Вызов функции загрузки данных
-    }, []);
+    }, []); // Пустой массив зависимостей, чтобы useEffect выполнялся только один раз
 
-     // Визуализация компонента
+    // Если данные загружаются, отображается сообщение о загрузке
     if (loading) {
-        return <p>Загрузка данных...</p>;
+        return <p className="loading-message">Loading data...</p>;
     }
 
-    if (error) {
-        return <p style={{ color: 'red' }}>{error}</p>;
-    }
-
+    // Рендеринг основного содержимого компонента
     return (
         <section className="arrays-section">
+            {/* Заголовок */}
             <h2 className="main-title">Output Arrays</h2>
             <h2 className="section-title">Arrays</h2>
             <div className="arrays-container">
+                {/* Отображение массивов данных */}
                 {data.map((item, index) => (
                     <div key={index} className="array-item">
                         <h4 className="array-index">{index + 1}</h4>

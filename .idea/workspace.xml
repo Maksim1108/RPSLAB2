@@ -6,14 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/InputAndEdit/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/OutputList/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputList/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/OutputList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/OutputListAndSort/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputListAndSort/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/OutputListAndSort/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/OutputListAndSort/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/shellSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shellSort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/algoritmhs/sortirovkaBlyat.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/algoritmhs/sortShell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,9 @@
       <workItem from="1702813277037" duration="10073000" />
       <workItem from="1702834241979" duration="4185000" />
       <workItem from="1702838499637" duration="7629000" />
-      <workItem from="1702885712855" duration="16989000" />
+      <workItem from="1702885712855" duration="22400000" />
+      <workItem from="1703170132603" duration="261000" />
+      <workItem from="1703179274016" duration="4115000" />
     </task>
     <task id="LOCAL-00001" summary="init third lab">
       <option name="closed" value="true" />
@@ -178,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702903351866</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit">
+      <option name="closed" value="true" />
+      <created>1702908839520</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702908839522</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

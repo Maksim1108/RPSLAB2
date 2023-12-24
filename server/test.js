@@ -1,7 +1,7 @@
 const chai = require('chai');
 const axios = require('axios');
 const {expect} = chai;
-const bestSort = require("./algoritmhs/sortirovkaBlyat")
+const bestSort = require("./algoritmhs/sortShell")
 
 describe('POST /ulpoadtestdata', () => {
     it('should successfully upload 100 arrays', async () => {
@@ -134,8 +134,8 @@ describe('Test Deleting 100 arr', () => {
     });
 });
 
-describe('Test Deleting 100 arr', () => {
-    it('should delete 100 arr', async () => {
+describe('Test Deleting 1000 arr', () => {
+    it('should delete 1000 arr', async () => {
         const response = await axios.post(`http://localhost:8080/delete`, {
             numberOfArrays: 1000
         });
@@ -147,8 +147,8 @@ describe('Test Deleting 100 arr', () => {
 });
 
 
-describe('Test Deleting 100 arr', () => {
-    it('should delete 100 arr', async () => {
+describe('Test Deleting 10000 arr', () => {
+    it('should delete 10000 arr', async () => {
         const response = await axios.post(`http://localhost:8080/delete`, {
             numberOfArrays: 10000
         });
