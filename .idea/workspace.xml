@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1bc2f02f-c62d-479a-9252-3cdd9e7c9881" name="Changes" comment="commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,8 +200,8 @@
     <MESSAGE value="connected to DB, create addArraysToDB func, remade shellSort, write two requests" />
     <MESSAGE value="add &quot;delete test&quot;" />
     <MESSAGE value="create main page" />
-    <MESSAGE value="prelast commit" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="prelast commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
